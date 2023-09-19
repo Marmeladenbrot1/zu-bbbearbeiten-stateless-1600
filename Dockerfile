@@ -1,5 +1,6 @@
 # syntax=docker/dockerfile:1
 
+
 # Comments are provided throughout this file to help you get started.
 # If you need more help, visit the Dockerfile reference guide at
 # https://docs.docker.com/engine/reference/builder/
@@ -47,3 +48,5 @@ EXPOSE 8000
 
 # Run the application.
 CMD gunicorn 'main:app' --bind=0.0.0.0:8000
+
+LABEL org.opencontainers.image.source https://github.com/aequivinius/zu-bbbearbeiten-stateless
